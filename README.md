@@ -11,7 +11,7 @@
   - `npm start`
 - Open `http://localhost:8080/` in a browser 
 
-## Building plugin
+## Build WebAssembly plugin
 
 The server loads a plugin as WebAssembly.
 The binary is already stored in chat-server.
