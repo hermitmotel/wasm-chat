@@ -1,0 +1,19 @@
+[package]
+name = "chat-server"
+version = "0.1.0"
+authors = ["Stefan Lankes <slankes@eonerc.rwth-aachen.de>"]
+edition = "2018"
+
+[dependencies]
+websocket = "0.26"
+log = "0.4"
+env_logger = "0.7"
+wasmtime = "0.19"
+wasmtime-wasi = "0.19"
+wasi-common = "0.19"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true

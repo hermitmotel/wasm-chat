@@ -1,0 +1,17 @@
+[package]
+name = "plugin"
+version = "0.1.0"
+authors = ["Stefan Lankes <slankes@eonerc.rwth-aachen.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ['cdylib']
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
